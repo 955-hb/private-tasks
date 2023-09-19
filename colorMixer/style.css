@@ -17,19 +17,19 @@ header {
     border: 2px solid black;
 }
 
-* {
+/* * {
     background-color: lightgray;
-}
+} */
 
 label {
   font-size: 2rem;
 }
 
 #color-value {
-    width: 60px;
+    width: auto;
     height: 20px;
     border: 2px solid black;
-    margin-left: 60px;
+    
 }
 button {
   margin: 0;
