@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API and Promises</title>
+</head>
+<body>
+    <script>
+
+        let p = fetch('https://krautipsum.com/api/noun');
+        p.then((Response)=> {
+            return Response.json();
+            //sconsole.log(Response);
+        })
+        .then((data)=> {
+            document.body.append(document.createTextNode(data.noun));
+            console.log(data);
+        })
+
+
+    </script>
+</body>
+</html>
