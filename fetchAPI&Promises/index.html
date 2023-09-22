@@ -1,24 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fetch API and Promises</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
+      // Code aus Bootcamp
+      // fetch("https://krautipsum.com/api/noun").then((response) => {
+      //     return response.json();
+      // })
+      //    .then((data) => {
+      //     console.log(data.noun);
+      //    })
 
-        let p = fetch('https://krautipsum.com/api/noun');
-        p.then((Response)=> {
-            return Response.json();
-            //sconsole.log(Response);
-        })
-        .then((data)=> {
-            document.body.append(document.createTextNode(data.noun));
-            console.log(data);
-        })
-
-
+      fetch("https://krautipsum.com/api/noun")
+        .then((resp) => resp.text())
+        .then((text) => console.log(text));
     </script>
-</body>
+  </body>
 </html>
