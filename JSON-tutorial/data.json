@@ -1,0 +1,9 @@
+{
+    "name": "Hannes",
+    "surname": "Mustermann",
+    "age": 23,
+    "favoriteColors": [
+        "blue",
+        "green"
+    ]
+}
