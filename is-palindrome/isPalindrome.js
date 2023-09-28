@@ -28,7 +28,7 @@ function isPalindrome (str) {
 
 console.log(
     isPalindrome('Able was i ere i saw Elba')
-);
+); //true
 console.log(
         isPalindrome('Able was i ere i saw Elba')
-    );
+    ); //true 
