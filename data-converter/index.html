@@ -1,48 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>data-converter</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <h2>Data Storage Conversion</h2>
 
     <div class="main-container">
+      <!-- INPUT VALUE -->
+      <input type="number" id="userInput" placeholder="Enter your value" />
 
-        <!-- INPUT VALUE -->
-        <input type="number" id="userInput" placeholder="Enter your value">
-
-        <!-- FORM -->
-        <div class="options">
-            <div class="from">
-                <select name="inputType" id="inputType">
-                    <option value="" disabled selected hidden>From :</option>
-                    <option value="kilibyte">KiloByte</option>
-                    <option value="megabyte">MegaByte</option>
-                    <option value="gigabyte">GigaByte</option>
-                    <option value="terabyte">TeraByte</option>
-                </select>
-            </div>
-            <i class="fa-solid fa-arrows-left-right-to-line"></i>
-
-            <!-- TO -->
-
-            <div class="to">
-                <select name="outputType" id="outputType">
-                    <option value="" disabled selected hidden>To :</option>
-                    <option value="kilibyte">KiloByte</option>
-                    <option value="megabyte">MegaByte</option>
-                    <option value="gigabyte">GigaByte</option>
-                    <option value="terabyte">TeraByte</option>
-                </select>
-            </div>
+      <!-- FORM -->
+      <div class="options">
+        <div class="from">
+          <select name="inputType" id="inputType">
+            <option value="" disabled selected hidden>From :</option>
+            <option value="kilibyte">KiloByte</option>
+            <option value="megabyte">MegaByte</option>
+            <option value="gigabyte">GigaByte</option>
+            <option value="terabyte">TeraByte</option>
+          </select>
         </div>
-        <div id="displayOutput">Result :</div>
-        <button onclick="convertData()">Convert Now</button>
+        <i class="fa-solid fa-arrows-left-right-to-line"></i>
+
+        <!-- TO -->
+
+        <div class="to">
+          <select name="outputType" id="outputType">
+            <option value="" disabled selected hidden>To :</option>
+            <option value="kilibyte">KiloByte</option>
+            <option value="megabyte">MegaByte</option>
+            <option value="gigabyte">GigaByte</option>
+            <option value="terabyte">TeraByte</option>
+          </select>
+        </div>
+      </div>
+      <div id="displayOutput">Result :</div>
+      <button onclick="convertData()">Convert Now</button>
     </div>
-    
-    
-</body>
+
+    <script src="./script.js"></script>
+  </body>
 </html>
