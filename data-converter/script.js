@@ -20,5 +20,21 @@ function convertData() {
     let kilobyte, megabyte, gigabye, terabyte
 
     //KILOBYTES
-    if () {}
+    if (inputType == 'kilobyte' & outputType == 'kilobyte') {
+        kilobyte = userInput
+        output.innerHTML = `${userInput} Kb = ${kilobyte} Kb`
+    
+    } else if (inputType == 'kilobyte' & outputType == 'megabyte') {
+        megabyte = userInput / 1024
+        output.innerHTML = `${userInput} Kb = ${(megabyte)} Mb`
+    
+    } else if (inputType == 'kilobyte' & outputType == 'gigabyte'){
+        gigabye = (userInput / 1024) / 1024;
+        output.innerHTML = `${userInput} Kb = ${(gigabye)} Gb`
+    
+    } else if (inputType == 'kilobyte' & outputType == 'terabyte'){
+        terabyte = (userInput / 1024) / 1024 / 1024;
+        output.innerHTML = `${userInput} Kb = ${(terabyte)} Tb`
+    }
 }
+
