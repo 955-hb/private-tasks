@@ -18,7 +18,7 @@ h2 {
 }
 
 .main-container {
-    width: 330px;
+    width: 330px;  /* max-width: 330px? */
     margin: 20px auto;
     border: 1px solid black;
     border-radius: 10px;
