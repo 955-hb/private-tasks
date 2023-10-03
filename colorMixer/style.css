@@ -29,3 +29,16 @@ header {
   padding: 8px;
   background-color: white;
 }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-random {
+  border: 2px solid red;
+  display: flex;
+
+}
