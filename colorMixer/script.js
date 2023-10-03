@@ -12,6 +12,8 @@ function setBackgroundColor() {
   const color = "#" + red + green + blue;
   document.body.style.backgroundColor = color;
   colorValue.innerText = color;
+
+  
 }
 setBackgroundColor();
 
