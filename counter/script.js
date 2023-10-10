@@ -23,7 +23,7 @@ function resetCounter() {
     colorCounter = 0;
     label.innerText = counter;
     main.style.setProperty('--counter', 0 + '%');
-    button.blur();
+    //button.blur();
 }
 
 const button = document.querySelector('button');
