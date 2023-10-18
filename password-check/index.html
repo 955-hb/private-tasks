@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <title>Password-Check</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="heading">Password Check</h1>
+    </header>
+    <main>
+      <form action="#" class="password-form">
+        <label class="password-form__label" for="first-password"></label>
+        <input
+          class="password-form__input"
+          data-cy="first-password"
+          placeholder="Please, enter your password"
+          autocomplete="off"
+          type="password"
+          name="first-password"
+          id="first-password"
+          minlength="10"
+          required
+        />
+
+        <label class="password-form__label" for="second-password"></label>
+        <input
+          class="password-form__input"
+          data-cy="second-password"
+          placeholder="Please, enter your password"
+          autocomplete="off"
+          type="password"
+          name="second-password"
+          id="second-password"
+          minlength="10"
+          required
+        />
+
+        <button
+          type="button"
+          class="password-form__btn-toggle"
+          data-cy="password-form__btn-toggle"
+        >
+          Show Password
+        </button>
+      </form>
+
+      <section class="password-check-conditions">
+        <p>
+          Passwords are equal<span class="check-equal" data-cy="check-equal"
+            >❌</span
+          >
+        </p>
+
+        <p>
+          Lower Case Letters<span
+            class="check-lower-case"
+            data-cy="check-lower-case"
+            >❌</span
+          >
+        </p>
+
+        <p>
+          Upper Case Letters<span
+            class="check-upper-case"
+            data-cy="check-upper-case"
+            >❌</span
+          >
+        </p>
+
+        <p>
+          Contains Numbers<span class="check-numbers" data-cy="check-numbers"
+            >❌</span
+          >
+        </p>
+
+        <p>
+          At least 10 characters long<span
+            class="check-for-ten-characters"
+            data-cy="check-for-ten-characters"
+            >❌</span
+          >
+        </p>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
