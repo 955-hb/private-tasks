@@ -6,28 +6,39 @@ const btnQuote = document.querySelector('#btnQuote');
 const quote = document.querySelector('#quote');
 const author = document.querySelector('#author');
 
-async function addNewQuote() {
-    const request = await fetch('https://dummy-apis.netlify.app/api/quote');
-    const response = await request.json();
 
-    quote.innerText = response.quote;
-    author.innerText = response.author;
+// Variante 1
+
+async function addNewQuote() {
+    const response = await fetch('https://dummy-apis.netlify.app/api/quote');
+    const data = await response.json();
+
+    quote.innerText = data.quote;
+    author.innerText = data.author;
 }
 
 addNewQuote();
 
 btnQuote.addEventListener('click', addNewQuote);
 
+// ################################################
 
-/*
-async function addNewQuote() {
-    let p = fetch('https://dummy-apis.netlify.app/api/quote');
-    let p2 = p.then((response) => {
+//Variante 2
 
-        quote.innerText = response.quote;
-        author.innerText = response.author;
+// function addNewQuoteTWO() {
+//     fetch('https://dummy-apis.netlify.app/api/quote')
+//                 .then(response => {
+//                    return response.json()  
+                     
+//                 })
+//         .then(data => {
+//             quote.innerText = data.quote;
+//             author.innerText = data.author;
+//         })
+// }
+// addNewQuoteTWO();
 
-        return response.json();
-    });
-}
-*/
+// btnQuote.addEventListener('click', addNewQuoteTWO);
+
+
+

@@ -1,4 +1,4 @@
-* {
+body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
@@ -17,7 +17,7 @@ header {
     justify-content: center;
     align-items: baseline;
     padding: 50px;
-    gap: 3ßpx;
+    gap: 3px;
     margin-bottom: 50px;
     background-color: lightgreen;
 
